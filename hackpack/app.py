@@ -30,7 +30,7 @@ def voice():
     if found_e164_pstn:
         to = "{0}".format(found_e164_pstn.group(1))
     elif found_0041_pstn:
-        to = "+{0}".format(found_011_pstn.group(1))
+        to = "+41{0}".format(found_011_pstn.group(1))
     elif found_ch_pstn:
         to = "+1{0}".format(found_us_pstn.group(1))
 
